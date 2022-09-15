@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'norse';
+  src: url(../fonts/Norse-Bold.otf);
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'roboto';
+  box-sizing: border-box;
+}
+
+html, body, main, section {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  background: #eef;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  font-size: 16px;
+}
+
+input {
+  display: block;
+  height: 1.5rem;
+  width: 16rem;
+  font-weight: light;
+  border: #E5E7EB 1px solid;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none;
+  border: #50f 1px solid;
+  box-shadow: 0 0 4px inset #50f;
+}
+
+input:invalid {
+  border: #f00 1px solid;
+}
+
+.error {
+  border: #f00 1px solid;
+}
+
+input:invalid::after {
+  content: '!!!';
+}
+
+fieldset {
+  display: flex;
+  gap: 50px;
+  border: 0;
+}
+
+fieldset {
+  margin-bottom: 15px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 600px;
+  width: 600px;
+  height: 100%;
+  padding-top: 100px;
+  background: url(./pandu-ior-hckbnUpcm6E-unsplash.jpg);
+  background-size:775px;
+  background-repeat: no-repeat;
+}
+
+.logo-section {
+  text-align: center;
+  color: white;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 100%; */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo-wrapper p {
+  font-family: 'norse';
+  font-size: 125px;
+}
+
+.logo {
+  width: 125px;
+}
+
+.image-credits {
+  padding: 10px;
+}
+
+.image-credits a:visited, .image-credits a:link {
+  color: white;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+  font-size: 20px;
+  color: #444;
+}
+
+.form-wrapper {
+  padding: 12px 24px;
+  margin-bottom: 24px; 
+  background: linear-gradient(to bottom, #fff, #efefff);
+  border: #ddf 1px solid;
+  box-shadow: 0 2px 5px #ddf;
+}
+
+.header-text {
+  width: 575px;
+}
+
+.submit-button {
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #596D48;
+  color: #fff;
+}
+
+.form-section p a:visited, .form-section p a:link {
+  color: #596D48;
+}
+
+.warning {
+  color: red;
+}

@@ -5,9 +5,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
-  <link rel="stylesheet" href="assets/style.cs">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="./assets/script.js" defer></script>
 </head>
 <body>
-  
+  <main>
+    <section class="logo-section">
+      <div class="image">
+        <div class="logo-wrapper">
+          <img class="logo" src="assets/odin-lined.png" alt="The Odin Project's logo.">
+          <p>ODIN</p>
+        </div>
+        <p class="image-credits">Photo by <a href="https://unsplash.com/@panduior">pandu ior</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+      </div>
+    </section>
+    <section class="form-section">
+      <p class="header-text">
+        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+      </p>
+      <p>
+        You <em>know</em> you want to.
+      </p>
+
+      <form action="">
+        <div class="form-wrapper">
+          <h1>Let's do this!</h1>
+          <fieldset>
+            <div>
+              <label for="fname">First Name</label>
+              <input type="text" name="fname" id="fname" required>
+            </div>
+            <div>
+              <label for="lname">Last Name</label>
+              <input type="text" name="lname" id="lname" required>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" required>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div>
+              <label for="pass">Password</label>
+              <input type="password" name="pass" id="pass" required>
+            </div>
+            <div>
+              <label for="passconfirm">Confirm Password</label>
+              <input type="password" name="passconfirm" id="passconfirm" required>
+            </div>
+          </fieldset>
+          <p class="warning">⚠ Passwords don't match</p>
+        </div>
+        <button class="submit-button" type="submit">Create Account</button>
+      </form>
+      <p>Already have an account? <a href="">Log in</a></p>
+    </section>
+  </main>
 </body>
 </html>
